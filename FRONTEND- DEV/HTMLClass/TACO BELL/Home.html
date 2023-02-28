@@ -7,23 +7,28 @@
     <title>Tacobell.com</title>
 </head>
 <body>
-    <h1 class="welcomeTitle">Welcome to the Little Taco Shop</h1>
+    <!-- home Page  -->
+    <section id = "Home">
+        <h1 class="welcomeTitle">Welcome to the Little Taco Shop</h1>
 
-    <!-- all the other pages -->
-    <!-- home page -->
-    <ul>
-        <li class="about"><a href="About.html">About LTS</a></li>
-        <li class="Menu"><a href="Menu.html">Our Menu</a></li>
-        <li class="WorkingHour"><a href="WorkingHour.html">Working Hour</a></li>
-        <li class="Contact"><a href="Contact.html">Contact Us</a></li>
-    </ul>        
+        <ul>
+            <li class="about"><a href="#About">About LTS</a></li>
+            <li class="Menu"><a href="#Menu">Our Menu</a></li>
+            <li class="WorkingHour"><a href="#WorkingHour">Working Hour</a></li>
+            <li class="Contact"><a href="#Contact">Contact Us</a></li>
+            <li class="Feedback"><a href="#Feedback">Feedback</a></li>
+            
+        </ul>        
 
-    <img src="Images/taco-bell.png" alt="wallpaper">
-    <br>
-    <p>Tacos and a drinks</p>
-    <hr>
-    <footer>Copyright © The Little Taco Shop</footer>
-    
+        <img src="Images/taco-bell.png" alt="wallpaper">
+        <br>
+        <p>Tacos and a drinks</p>
+        <hr>
+        <footer>Copyright © The Little Taco Shop</footer>
+    </section>
+<!-- all the other pages -->
+
+    <!-- About -->
     <section id="About">
         <h1 class="about">About LTS</h1>
         <p class="intro"> Little Tacos Shop was built on 1982. The owner <strong>Aashish Stanl</strong> started this with $10 at that time.
@@ -39,6 +44,8 @@
         <img src="Images/firstTaco.png" alt="image of Taco 1982">
 
         <p>Since then we improved and now we have been across the world</p>
+        <br>
+        <a href="#Home">Back to top</a>
         <br>
         <hr>
         <footer>Copyright © The Little Taco Shop</footer>
@@ -95,16 +102,16 @@
         </table>
         <br>
 
-        <a href="">back to top</a>
+        <a href="#Home">back to top</a>
         <hr>
         <footer>Copyright © The Little Taco Shop</footer>
     </section>
     
     <!-- Working hour page -->
-    <section class="WorkingHour">
+    <section id="WorkingHour">
         <h1 class="welcomeTitle">Little Taco Shop Hours</h1>
         <ul>
-            <li class="about"><a href="Home.html">Home</a></li>
+            <li class="home"><a href="Home.html">Home</a></li>
             <li class="WorkingHour"><a href="About.html">About LTS</a></li>
             <li class="Menu"><a href="Menu.html">Our Menu</a></li>
             
@@ -125,7 +132,7 @@
 
     <!-- contact -->
 
-    <section>
+    <section id = "Contact">
         <h1 class="contact">Contact Us</h1>
         <ul>
             <li class="about"><a href="Home.html">Home</a></li>
@@ -144,7 +151,7 @@
                 <p>Name: <input type="text" placeholder="your name here"></p>
                 <p>Email: <input type="email" placeholder="your email here"></p>
                 
-                <textarea name="" placeholder="Please type your feedback here" id="" cols="30" rows="10"></textarea>
+                <textarea id = "Feedback" name="" placeholder="Please type your feedback here. Our team will contact you within 1 hour." id="" cols="30" rows="10"></textarea>
                 <br>
                 <button type="reset">Reset feedback</button>
                 <button type="submit">Send</button>
@@ -153,8 +160,8 @@
             <h3>Our Location</h3>
 
             <p> <em>B26/T 3rd Street, New york <br> Zipcode 854301 <br> Phone: <a href="">+1- 9891277554</a> </em> </p>
-            <br>
-            <a href="">back to top</a>
+            
+            <a href="#Home">back to top</a>
 
             <hr>
             <footer>Copyright © The Little Taco Shop</footer>
