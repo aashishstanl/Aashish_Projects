@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .container{
+            border: 1px solid grey;
+            height: 400px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: black;
+               
+            
+        }
+        .container:hover{
+            background-color: green;  
+            transition-duration: 1s;
+
+             }
+             .container:hover .box{
+                margin-left: 75%;
+                transition-duration: 1s;
+                /* background-image: url(rhanhi.gif); */
+                /* background-repeat: no-repeat; */
+                /* background-image: cover; */
+                /* width: 80vh; */
+                /* height:110%; */
+                /* background-color: green; */
+             }
+             .container:hover #rhanhi{
+                display: block;
+                behavior: smooth;
+                
+                
+             }
+             .container:hover h3{
+                display: none;
+                behavior: smooth;
+                
+             }
+            
+        .box{
+            background-color: yellow;
+            border-radius: 30px;
+            height: 300px;
+            width: 25%;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            position: relative;
+
+        }
+        #rhanhi{
+             display: none;
+             min-height: 270px;
+             position: absolute;
+             max-width:100%;
+             height: inherit;
+             border-radius: 10px;
+             
+
+             /* font-size: larger;
+             width: 50%; */
+        }
+        h3{
+            color: white;
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 5%;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><img src="comehere.png" alt="come here"></h3>
+        <div class="box">
+            <img id = "rhanhi"src="rhanhi.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>
