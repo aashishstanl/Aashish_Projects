@@ -1,0 +1,112 @@
+<!-- om namah sivaye -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Aashish</title>
+    <style>
+        .IntroWrapper{
+            
+            padding: 70px 130px;
+            display: flex;
+            column-gap: 70px;
+            background-color: black;
+            color: whitesmoke;
+            min-width: 110px;
+        }
+        .TextWrapper{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            /* max-width: 617px; */
+            width: auto;
+            
+        }
+        .TextWrapper p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            
+        }
+        .IntroWrapper button{
+            width: 208px;
+            height: 47px;
+            left: 148px;
+            top: 477px;
+            background: #FF6464;
+            border-radius: 2px;
+
+            /* font */
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+
+color: #FFFFFF;
+        }
+        .ImageWrapper img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        @media screen and (min-width:2100px) and (max-width:2600px){
+            .IntroWrapper{
+                padding: 100px 500px;
+                column-gap: 200px;
+            }
+        }            
+        
+        @media screen and (min-width:1300px) and (max-width:2100px) {
+            .IntroWrapper{
+                padding: 70px 300px;
+                    
+            }
+            .ImageWrapper img{
+            width: 250px;
+            height: 250px;
+            }
+
+            
+        }
+        @media screen and (max-width:1024px){
+            .IntroWrapper{
+            padding: 70px 130px;
+            display: flex;
+            column-gap: 70px;
+            }
+            
+            @media  screen and (max-width:640px) {
+            .IntroWrapper {
+                padding: 70px;
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                align-items: center;
+            }
+            .TextWrapper{
+                text-align: center;
+                align-items: center;
+            }
+           
+        }
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <!-- creating the first section -->
+    <section class="IntroWrapper">
+        <div class="TextWrapper">
+            <h1>Hi, I am Aashish, Frontend Developer</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button >Download Resume</button>
+        </div>
+        <div class="ImageWrapper">
+            <img src="Aashish.png" alt="Profile Photo">
+        </div>
+    </section>
+</body>
+</html>
