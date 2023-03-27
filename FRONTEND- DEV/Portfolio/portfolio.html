@@ -52,12 +52,86 @@ color: #FFFFFF;
             width: 200px;
             height: 200px;
         }
-        @media screen and (min-width:2100px) and (max-width:2600px){
+        
+        /* section 2 */
+        .ProjectWrapper{
+            /* background-color: #EDF7FA ; */
+           
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+            
+            align-items: center;
+            width: 100%;
+            /* height: 396px; */
+            height: auto;
+
+        }
+        .work{
+            background-color: aquamarine;
+        }
+        /* .recentPost{
+            
+            padding-top:20px;
+            display: flex;
+            margin: 0 11% 0 11%;
+            height: 25px;
+            justify-content: space-between;
+            
+        } */
+        .Project1{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+            border-radius: 4px;
+            width: 418px;
+            /* height: 295px; */
+            margin-top: 10px;
+            margin-bottom: 32px;
+            padding: 10px;
+            
+            
+            
+        }
+        .Project1 h1{
+            
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 38px;
+            color: #21243D;
+        
+        }
+        .Project1 .span{
+            display: flex;
+            column-gap: 20px;
+            
+
+        }
+        
+        /* feature work */
+       
+        .feature{
+            display: flex;
+            column-gap: 18px;
+            
+        }
+        .feature p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243D;
+        }
+        .featureWrapper{
+            padding:10px 10px;
+        }
+        /* media */
+        /* @media screen and (max-width:3000px){
             .IntroWrapper{
                 padding: 100px 500px;
                 column-gap: 200px;
             }
-        }            
+        }             */
         
         @media screen and (min-width:1300px) and (max-width:2100px) {
             .IntroWrapper{
@@ -78,18 +152,20 @@ color: #FFFFFF;
             column-gap: 70px;
             }
             
-            @media  screen and (max-width:640px) {
+            @media  screen and (max-width:600px) {
             .IntroWrapper {
                 padding: 70px;
                 flex-direction: column-reverse;
                 row-gap: 20px;
                 align-items: center;
+              
+                
             }
             .TextWrapper{
                 text-align: center;
                 align-items: center;
             }
-           
+            
         }
         }
        
@@ -102,11 +178,84 @@ color: #FFFFFF;
         <div class="TextWrapper">
             <h1>Hi, I am Aashish, Frontend Developer</h1>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <button >Download Resume</button>
+            <button ><a style = "text-decoration: none; color: white;" href="//docs.google.com/document/d/1wsou3YseTZd_8EGpupGKIHV79XzOgOjglp7Ge52pOro/edit"> Download Resume</a></button>
         </div>
         <div class="ImageWrapper">
             <img src="Aashish.png" alt="Profile Photo">
         </div>
+    </section>
+
+    <!--  recent posts-->
+    <section class="work">
+        <div class="recentPost">
+            <!-- <span>Recent posts</span>
+            <span><a href="">View all</a></span> -->
+        </div>
+        <div class="ProjectWrapper">
+            <div class="Project1">
+                <h1>Making a design system from scratch</h1>
+                <!-- <span>12 Feb 2020 | Design, Pattern </span> -->
+                <div class="span">
+                    <span>12 Feb 2020</span>
+                    <span>|</span>
+                    <span>Design, Pattern</span>
+                </div>
+                <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>            
+            </div>
+            <div class="Project1">
+                <h1>Making a design system from scratch</h1>
+                <span> 12 Feb 2020 | Design, Pattern</span>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <!--  Featured work -->
+    <section class="featureWork">
+       <div class="featureWrapper">
+            <div class="feature">
+                <div class="img">
+                    <img src="Rectangle 30.png" alt="">
+                </div>
+                <div>
+                    <h1>Designing Dashboards</h1>
+                    <span>2020</span>
+                    <span>Dashboard</span>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="feature">
+                <div class="img">
+                    <img src="Rectangle 32.png" alt="">
+                </div>
+                <div>
+                    <h1>Designing Dashboards</h1>
+                    <span>2020</span>
+                    <span>Dashboard</span>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="feature">
+                <div class="img">
+                    <img src="Rectangle 34.png" alt="">
+                </div>
+                <div>
+                    <h1>Designing Dashboards</h1>
+                    <span>2020</span>
+                    <span>Dashboard</span>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <hr>
+       </div>
     </section>
 </body>
 </html>
