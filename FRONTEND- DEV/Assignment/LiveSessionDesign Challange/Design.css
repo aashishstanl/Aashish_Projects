@@ -1,0 +1,58 @@
+body{
+   
+   margin: 20;
+   padding: 0;
+    background-color: grey;
+    
+}
+header{
+    position: relative;
+    background-color:white;
+    font-size: 60px;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+main{
+    
+    display: flex;
+    column-gap: 2%;
+    flex-grow: 1;
+    overflow-y:scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    height: 77vh;
+    
+    
+}
+.card{
+    color: white;
+    border: 1px solid whitesmoke;
+    height: auto;
+    font-size: 100px;
+    padding: 8px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+footer{
+    position: relative;
+    background-color:white;
+    font-size: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   padding-right: 10px;
+    
+}
+small{
+    font-size:small;
+    
+}
+header, footer{
+    flex-shrink: 0;
+}
