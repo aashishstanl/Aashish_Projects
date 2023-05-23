@@ -12,6 +12,7 @@ header{
     align-items: center;
     display: flex;
     flex-shrink: 0;
+    text-transform:  ;
     margin-bottom: 20px;
 }
 main{
@@ -32,7 +33,7 @@ main{
     border: 1px solid whitesmoke;
     height: auto;
     font-size: 100px;
-    padding: 8px 100px;
+    padding: 8px 150px;
     display: flex;
     align-items: center;
     justify-content: center;
