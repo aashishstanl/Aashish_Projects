@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#CaptchaBoxForResetPass{
+    /* font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    float: left; */
+    
+    
+}
+#CaptchaBoxForResetPass{
+    display: flex;
+    flex-direction: column;
+/* }
+#frogt_passwd{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    color: #333;
+    font-size: 14px;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+    border: 3px solid #014c8e;
+    position: absolute;
+    right: 50%;
+    margin-top: 14px;
+    padding: 3px 15px 15px 15px;
+    z-index: 99;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    max-width: fit-content;
+    display: block;
+} */
+
+#ForgotPasswordUserName, #ForgotPasswordEmail{
+    -webkit-box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    margin-right: 8px;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#Captcha_Text{
+    -webkit-box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    margin-right: 8px;
+    float: left;
+    font-size: 14px;
+    background: #fbfbfb;
+    width: 250px;
+}
+#CaptchaImage1{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    color: #333;
+    font-size: 14px;
+    text-align: right;
+    width: 88px;
+    aspect-ratio: auto 88 / 37;
+    height: 37px;
+    -webkit-box-sizing: border-box;
+    border: none;
+}
+#CaptchaBoxForResetPass > img.btnleft.mref{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    color: #333;
+    font-size: 14px;
+    text-align: right;
+    height: 37px;
+    -webkit-box-sizing: border-box;
+    border: none;
+    margin-right: 6px;
+    margin-left: 2px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <div id="frogt_passwd" class="forgot_pwd" style="width: 85%; display: block;">
+        
+    
+        <section class="newcaptcha" id="CaptchaBoxForResetPass" style="display: block;">
+            <input class="new_captchainput" type="text" placeholder="Enter Captcha" id="Captcha_Text" name="captcha_Text">
+            <img id="CaptchaImage1" alt="Captcha" width="88px" height="37px" loading="lazy" src="data:image/gif;base64,R0lGODlhMgAUAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAPwALAAAAAAyABQAAAj/AN8IHEiwoMGDCBMaTFMkzRuGDiE+bDgxIkWJGC9qtBhRYBo4ReA4hPNGzZuQHwWaNPKQpMg3LE2+EQmy5MyWKG/afCiQIk+BPwY6BCp0YFCPRosSHehTJkOkNo8OdQgEqsOgL3lKJTm155tl+6JxDbVvnyaBZdOefQOqLByw+0i+OSpTZBGed0/a1LTvDV+0fuO+2QfKYdugZt8o21dk8dS8UvU6HbhM2ZtMggW2fZj4a1+4y3j+hbO488usLScuDqzJIV/Lg9Pug90ZbbTAgbmeHHrUp2dofYHCMVuE8Ny2Z43/GJ5YWbShE4VyHWpy6PCdg5Ovzc79DfCzRSr3qhyZ+qjXmX3/jk5M2HXw9mAtuyeZ+Cl0h9UFwh1YGhRa2f5xJ1twpYEH1XJJ/XRUZB1JB92CSzmY00NTgXTfTL2NNxdTXf1k10fQ7UaQXCMxpJtNIJJYRF0mOmREiHfhN1BVV21oY4fmxShXdCFuCKJHMR504lM1pdTRRR6RhORMFL3oEUsW5beiQC91WNVODRX5kpMdpvSTUEHaiFVkP03m1VBB5qWRSAEBADs=">	
+            <img src="new-design/images/Refresh_Icon.png" loading="lazy" alt="Refresh" class="btnleft mref" style="cursor: pointer;" height="37px" title="Click here for new Image" onclick="RefreshCaptchaImage(&quot;ResetPassCaptcha&quot;)">	
+        </section>  	
+        <!-- <div class="ErrCaptchaMessg"></div>	 -->
+        <!-- <div id="captchaerror" class="erromsg new_loginerror">	
+            Letters are case-sensitive	
+        </div>	 -->
+   
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    
+    display: flex;
+    column-gap: 534px;
+    align-items: center;
+    
+    
+    
+}   
+header .logo{
+
+    margin-left: 20px ;
+    height: auto;
+    
+}
+.logo1{
+    width: 206px;
+    height: 80px;
+}
+header .list-item{
+    list-style: none;
+    display: flex;
+    column-gap: 114px;
+
+    /* font size */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    color: black;
+  
+}
+.active{
+    color: #FA4A0C;
+}
+/* section2 */
+
+.introWrapper{
+    position: relative;
+    height: 619px;
+    background-image: url(Images/Rectangle\ 48.png);
+    /* padding: 75px 50px 155px; */
+    padding: 0;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+
+    .introWrapper h3{
+        position: absolute;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        top:73px;
+        letter-spacing: 0.1px;
+        
+    }
+    .introWrapper h1{
+        position: absolute;
+        top: 126px;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 80px;
+        /* max-width: 900px; */
+        
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+    .introWrapper h4{
+        position: absolute;
+        top: 313px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.2px;
+    }
+    .buttonWrapper{
+        position: absolute;
+        top: 405px;
+        display: flex;
+        column-gap: 15px;
+        justify-content: center;
+        padding: 25px;
+    }
+    .introWrapper button{
+        width: 160px;
+        height: 45px;   
+        border-radius: 30px;    
+        
+        
+        
+    }
+    .playStore{
+        background-color: #FA4A0C;
+    }
+    .appStore{
+        background: transparent;
+        border: 1px solid white;
+    }
+
+
+    .introWrapper a{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+       
+        letter-spacing: 0.1px;
+        text-decoration: none;
+        color: white;
+    }
+    .phone{
+        position: absolute;
+        top: 500px;
+        
+    }
+   
+    .hrH3{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 1200px;
+    }
+    hr{  
+        width: 884px;
+        border: 2px solid #E4E4E4
+    }
+    .secondH3{  
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        color: #000000;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        opacity: 0.8;
+
+        
+    }
+/* .FoodEvery{
+    position: absolute;
+    width: 500px;
+    height: 783px;
+    top: 380px;
+    left: 350px;
+}
+.DeliciousFood{
+    position: absolute;
+    width: 245px;
+    height: 431px;
+    top: 600px;
+    left: 655px;
+    
+} */
+
+.AppWorks{
+  
+    position: absolute;
+    background: transparent;
+    height: 806.99px;
+    top: 1417px;
+    /* background-color: #FA4A0C; */
+    
+    /* right: 140px; */
+    
+}
+
+.appWorksWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+}
+.appWorksWrapper img{
+    width: 552px;
+    height: 700px;
+}
+.createAccount h3{
+    width: 232px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FA4A0C;
+
+}
+.createAccount h2{
+    width: 561px;
+    height: 114px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+}
+.createAccount h4{
+    width: 467px;
+    height: 76px;       
+
+    font-family: 'tahoma';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+
+
+}
+#AppWorks2{
+    position: absolute;
+    display: flex;
+    top:1950px;
+    left: 200px;
+   
+   
+    
+    
+            
+}
+#AppWorks3{
+    position: absolute;
+    top: 2600px;
+    
+    
+}
+#lastSection{
+    top: 2650px;
+    height: 250px;
+    
+}
+footer{
+    position: absolute;
+    top:3800px;
+    
+    width: 100%;
+    
+}
+footer .list-item {
+    list-style: none;
+    column-gap: 30px;
+    
+}
+footer .footer_item{
+    display: flex;
+    
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10px;
+}
+.list-item{
+    display: flex;
+    column-gap: 20px;
+}
+.footer_item p{
+    width: auto;
+    height: 18px;
+    font-weight: bolder;
+    
+}
+.footer_item a{
+    text-decoration: none;
+    color: #000000;
+    
+}
+#lastSection{
+    position: relative;
+    height: 416px;
+}
+#lastSection h1{
+    position: absolute;
+    top: 146px;
+}
+#lastSection h4{
+    position: absolute;
+    top:223px;
+}
+#lastSection .buttonWrapper{
+    position: absolute;
+    top: 320px;
+    
+}
+#firstPhone{
+    width:450px;
+}
+.middleSection{
+    
+    display: flex;
+    justify-content: center;
+    left: 25%;
+}
+
+

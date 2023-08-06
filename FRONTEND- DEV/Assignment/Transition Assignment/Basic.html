@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .container{
+            border: 1px solid grey;
+            height: 400px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: black;
+               
+            
+        }
+        .container:hover{
+            background-color: green;  
+            transition-duration: 1s;
+
+             }
+             .container:hover .box{
+                margin-left: 75%;
+                transition-duration: 1s;
+             
+             }
+             .container:hover #rhanhi{
+                display: block;
+                behavior: smooth;
+                
+                
+             }
+             .container:hover h3{
+                display: none;
+                behavior: smooth;
+                
+             }
+            
+        .box{
+            background-color: yellow;
+            border-radius: 30px;
+            height: 300px;
+            width: 25%;
+        
+
+        }
+   
+    
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>
